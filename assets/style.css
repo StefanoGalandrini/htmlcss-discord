@@ -3,10 +3,8 @@
 @import url('https://fonts.cdnfonts.com/css/whitney-2');
 
 body {          /* famiglie font Whitney */
-    font-family: 'Whitney', sans-serif;
-    font-family: 'Whitney Semibold', sans-serif;
     font-family: 'Whitney Book', sans-serif;
-    font-family: 'Whitney Light', sans-serif;
+    font-family: 'Whitney Bold', sans-serif;
 }
 
 /*PROPRIETÀ COMUNI */
@@ -20,9 +18,9 @@ body {          /* famiglie font Whitney */
 }    
 
 a {             /* link di header e footer */
-    text-align: right;
+    /* text-align: right; */
     text-decoration: none;
-    color: black
+    color: white
 }    
 
 .boxes {            /* proprietà comuni dei box <div> */
@@ -32,49 +30,94 @@ a {             /* link di header e footer */
     padding: 2rem 0;
 }
 
-/* HEADER */
 
-header {
-    background-color: #00008b;
-    padding-bottom: 1rem;
+/* HEADER - nav section */
+
+nav {
+    height: 6rem;
+    background-color: #255ee9;
 }        
 
-.top_nav {
-    background-color: #add8e6;
-    padding: 0.5rem 0;
-}        
-
-.header-wrap {      /* contenitore per elementi flex */
+.nav-container {      /* logo, links and CTA container */
+    height: 100%;
     margin-inline: 15%;
+}        
+
+.main-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #daa520;
-}        
-
-header span,
-header a {
-    border: 1px dashed black;
-    flex: 1 0 auto;
-    padding: 0.25rem;
-}        
-
-header .logo {
-    text-align: left;
-}        
-
-header .link {
+    gap: 1rem;
+    height: 100%;
+    list-style-type: none;
     text-align: center;
-}        
+}
 
-.header-title-box {
-    margin: 2rem auto 1rem;
-    max-width: 50%;
-    height: 18rem;
-    padding-inline: 2rem;
-    background-color: #ee82ee;
-    border:  1px dashed black;;
+.main-list .logo,
+.main-list .cta {
+    flex: 1 0 calc(25% - 6 * 1.5rem);
+}
+
+.main-list img {
+    height: 2.5rem;
+}
+
+.main-list a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+    padding-inline: .25rem;
+}
+
+.main-list .cta {
+    height: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
 }    
+
+.main-list .button {
+    background-color: white;
+    color: #12191f;
+    font-weight: bold;
+    padding-inline: 1rem;
+    border-radius: 100px;
+}
+
+.main-list .link:hover {
+    background-color: white;
+    color: #12191f;
+}
+
+.main-list .button:hover {
+    background-color: #12191f;
+    color: white;
+}
+
+
+/* HEADER - title section */
+
+.header-title {
+    background-image: url("/img/jumbo.png");
+    background-size: cover;
+    background-position: top center;
+    padding: 12rem 0 12rem;
+    padding-inline: 25vw;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+.header-text {
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+    line-height: 2em;
+}
 
 
 /* MAIN */
