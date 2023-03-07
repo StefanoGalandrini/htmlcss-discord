@@ -97,26 +97,52 @@ nav {
 
 /* HEADER - title section */
 
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.header-text {
+    font-size: 1.3em;
+    margin-bottom: 0.25rem;
+    line-height: 2em;
+}
+
 .header-title {
-    background-image: url("img/jumbo.png");
+    background-image: url("../img/jumbo.png");
     background-size: cover;
-    background-position: top center;
-    padding: 12rem 0 12rem;
-    padding-inline: 25vw;
+    background-position: center center;
+    aspect-ratio: calc(3360 / 1251);
     color: white;
     text-align: center;
 }
 
-h1 {
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-bottom: 2.5rem;
+.header-container {
+    display: flex;
+    height: 100%;
+    margin-inline: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
 }
 
-.header-text {
-    font-size: 1.4em;
-    margin-bottom: 1rem;
-    line-height: 2em;
+.header-container button {
+    border: none;
+    font-size: 1.3em;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+}
+
+button.mac {
+    background-color: #ffffff;
+    color: #23272a;
+}
+
+button.browser {
+    background-color: #23272a;
+    color: #ffffff;
 }
 
 
