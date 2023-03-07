@@ -135,7 +135,7 @@ button {
     border-radius: 100px;
 }
 
-header .mac {
+header a.mac {
     background-color: #ffffff;
     color: #23272a;
 }
@@ -177,13 +177,26 @@ section .img {
     flex: 0 0 20%;
 }
 
+.wave {
+    display: block;
+    width: 100%;
+    aspect-ratio: 15 / 1;
+}
+
+.wave-mirror {
+    display: block;
+    width: 100%;
+    aspect-ratio: 15 / 1;
+    transform: scale(1, -1);
+}
+
 .grey {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     flex-direction: row-reverse;
 }
 
 .call-to-action {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     flex-direction: column-reverse;
     text-align: center;
 }
