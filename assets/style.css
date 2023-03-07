@@ -177,6 +177,10 @@ section .img {
     flex: 0 0 20%;
 }
 
+.description p {
+    margin-inline: 15%;
+}
+
 .wave {
     display: block;
     width: 100%;
