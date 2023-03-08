@@ -177,8 +177,8 @@ section .img {
     flex: 0 0 20%;
 }
 
-.description p {
-    margin-inline: 15%;
+section img {
+    width: 50%;
 }
 
 .wave {
@@ -254,13 +254,13 @@ footer {
     text-align: left;
 }
 
-.footer-nav-list > * {
-    flex: 0 0 20%;
+.footer-nav-title {
+    flex: 0 0 30%;
 }
 
-.footer-nav-list > * > * {
-    background-color: salmon;
-    flex: 1 0 100%;
+.footer-nav-title-small {
+    flex: 0 0 20%;
+    gap: 2rem;
 }
 
 .footer-nav-title > * {
@@ -322,58 +322,6 @@ li .items {
     color: #ffffff;
     font-size: 1.5rem;
 }
-
-
-
-
-.main-list .logo,
-.main-list .cta {
-    flex: 1 0 calc(25% - 6 * 1.5rem);
-}
-
-.main-list img {
-    height: 2.5rem;
-}
-
-.main-list a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    min-width: max-content;
-    padding-inline: .25rem;
-}
-
-.main-list .cta {
-    height: 40%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-}    
-
-.main-list .button {
-    background-color: white;
-    color: #12191f;
-    font-weight: bold;
-    padding-inline: 1rem;
-    border-radius: 100px;
-}
-
-.main-list .link:hover {
-    background-color: white;
-    color: #12191f;
-}
-
-.main-list .button:hover {
-    background-color: #12191f;
-    color: white;
-}
-
-
-
-
-
-
-
 
 
 /* FOOTER - Call To Action section */
